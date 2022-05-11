@@ -1,0 +1,9 @@
+{
+  "presets": [["@babel/preset-react"], ["@babel/preset-env"]],
+  "env": {
+    "development": {
+      "presets": [["@babel/preset-react", { "development": true }], ["@babel/preset-env", { "targets": { "node": "current" } }]]
+    }
+  },
+  "plugins": ["react-hot-loader/babel", "@babel/plugin-transform-runtime"]
+}

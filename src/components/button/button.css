@@ -1,0 +1,30 @@
+.button {
+  cursor: pointer;
+  color: #222;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 10px;
+  border: 2px solid #222;
+  transition: all 250ms ease-in-out;
+}
+
+.button.-create {
+  background-color: #fd0;
+}
+
+.button.-remove {
+  background-color: #fb0;
+}
+
+.button.-create:hover {
+  color: #fd0;
+  background-color: #222;
+  border-color: #fd0;
+}
+
+.button.-remove:hover {
+  color: #fb0;
+  background-color: #222;
+  border-color: #fb0;
+}

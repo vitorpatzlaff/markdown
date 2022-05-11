@@ -1,0 +1,102 @@
+{
+  "name": "markdown-editor",
+  "version": "1.0.0",
+  "description": "it renders markdown",
+  "license": "ISC",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node index.js",
+    "dev": "node server.js",
+    "test": "jest --coverage",
+    "test:watch": "npm test -- --watchAll",
+    "lint": "standard --verbose | snazzy",
+    "lint:watch": "gulp",
+    "lint:fix": "standard --fix",
+    "build": "cross-env NODE_ENV=production BABEL_ENV=production webpack --progress --config webpack/prod.config",
+    "build:analyzer": "cross-env ANALYZER=true npm run build",
+    "storybook": "start-storybook -p 6006 -c storybook",
+    "build-storybook": "cross-env NODE_ENV=production BABEL_ENV=production build-storybook -c storybook"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^.+\\.css$": "<rootDir>/config/CSSStub.js"
+    }
+  },
+  "devDependencies": {
+    "@babel/cli": "7.17.6",
+    "@babel/core": "7.17.5",
+    "@babel/plugin-transform-runtime": "7.17.0",
+    "@babel/preset-env": "7.16.11",
+    "@babel/preset-react": "7.16.7",
+    "@babel/runtime": "7.17.2",
+    "@hot-loader/react-dom": "17.0.2",
+    "@storybook/addon-actions": "6.4.19",
+    "@storybook/addon-docs": "6.4.19",
+    "@storybook/addon-essentials": "6.4.19",
+    "@storybook/addon-interactions": "6.4.19",
+    "@storybook/addon-links": "6.4.19",
+    "@storybook/builder-webpack5": "6.4.19",
+    "@storybook/manager-webpack5": "6.4.19",
+    "@storybook/react": "6.4.19",
+    "@storybook/testing-library": "0.0.9",
+    "@wojtekmaj/enzyme-adapter-react-17": "0.6.6",
+    "babel-jest": "27.5.1",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "chai": "4.3.6",
+    "clean-webpack-plugin": "4.0.0",
+    "core-js": "3.21.1",
+    "cross-env": "7.0.3",
+    "css-loader": "6.7.0",
+    "enzyme": "3.11.0",
+    "file-loader": "6.2.0",
+    "gulp": "4.0.2",
+    "html-webpack-plugin": "5.5.0",
+    "jest": "27.5.1",
+    "jest-cli": "27.5.1",
+    "mini-css-extract-plugin": "2.6.0",
+    "raw-loader": "4.0.2",
+    "react-hot-loader": "4.13.0",
+    "snazzy": "9.0.0",
+    "standard": "16.0.4",
+    "standard-loader": "7.0.0",
+    "style-loader": "3.3.1",
+    "url-loader": "4.1.1",
+    "webpack": "5.70.0",
+    "webpack-bundle-analyzer": "4.5.0",
+    "webpack-cli": "4.9.2",
+    "webpack-dashboard": "3.3.7",
+    "webpack-dev-server": "4.7.4"
+  },
+  "dependencies": {
+    "@fdaciuk/ajax": "3.0.4",
+    "babel-loader": "8.2.3",
+    "compression": "1.7.4",
+    "express": "4.17.3",
+    "highlight.js": "11.4.0",
+    "lodash": "4.17.21",
+    "marked": "4.0.12",
+    "normalize.css": "8.0.1",
+    "preact": "10.6.6",
+    "prop-types": "15.8.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-test-renderer": "17.0.2",
+    "uuid": "8.3.2"
+  },
+  "standard": {
+    "ignore": [
+      "coverage",
+      "dist",
+      "node_modules",
+      "storybook-static"
+    ],
+    "globals": [
+      "alert",
+      "test",
+      "it",
+      "describe",
+      "localStorage",
+      "expect"
+    ]
+  }
+}

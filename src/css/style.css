@@ -1,0 +1,103 @@
+@charset 'utf-8';
+
+@import '~normalize.css';
+@import '~highlight.js/styles/github.css';
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body,
+body > div {
+  height: 100%;
+  width: 100%;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+.editor {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.editor-header {
+  background: #222;
+  display: flex;
+  height: 40px;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.editor-header .save-message {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+.editor-header input {
+  font-size: 18px;
+  outline-style: none;
+  padding: 0 5px;
+}
+
+textarea,
+.view {
+  min-height: calc(100% - 40px);
+  min-width: 40%;
+  max-width: 40%;
+}
+
+textarea {
+  border: 10px solid #fc0;
+  font-size: 16px;
+  padding: 10px;
+  resize: none;
+}
+
+textarea:focus {
+  outline: 0 none;
+}
+
+.view {
+  background: #333;
+  color: #fff;
+  overflow: auto;
+  padding: 10px;
+}
+
+.files-list-container {
+  background: #fc0;
+  max-width: 20%;
+  min-width: 20%;
+}
+
+.title {
+  margin-left: 20px;
+}
+
+.file-button {
+  background-color: #fb0;
+  border: 2px solid #fd0;
+  color: #222;
+  cursor: pointer;
+  padding: 2px 5px;
+  margin-bottom: 5px;
+  transition: all 250ms ease-in-out;
+}
+
+.file-button:hover{
+  background-color: #fd0;
+  border-color: #fb0;
+}

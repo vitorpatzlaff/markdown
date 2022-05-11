@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should Button create to match to snapshot 1`] = `
+<button
+  className="button -create"
+  onClick={[Function]}
+>
+  Click me
+</button>
+`;
+
+exports[`Should Button default to match to snapshot 1`] = `
+<button
+  className="button"
+  onClick={[Function]}
+>
+  Click me
+</button>
+`;
+
+exports[`Should Button remove to match to snapshot 1`] = `
+<button
+  className="button -remove"
+  onClick={[Function]}
+>
+  Click me
+</button>
+`;
