@@ -1,4 +1,4 @@
-# [GitHub App](https://vitorpatzlaff-github-app.netlify.app)
+# [Markdown Editor](https://vitorpatzlaff-markdown.netlify.app)
 ### English
 This is a markdown editor. Again, other project to show React working.
 ##### Project Language: English
