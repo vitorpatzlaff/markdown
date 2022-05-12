@@ -64,8 +64,6 @@ module.exports = {
   ),
 
   module: {
-    noParse: common.module.noParse,
-
     rules: [
       common.standardLoader,
       common.jsLoader,

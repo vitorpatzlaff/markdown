@@ -45,10 +45,6 @@ module.exports = {
     ],
     use: ['style-loader', 'css-loader']
   },
-  
-  module: {
-    noParse: /\.min\.js$/i
-  },
 
   resolve: {
     alias: {
