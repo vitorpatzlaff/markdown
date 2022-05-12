@@ -4,5 +4,5 @@ This is a markdown editor. You write a code in markdonw and the page render it. 
 ##### Project Language: English
 ##
 ### Português
-Este é um editor de markdown. Você escreve um código em markdown e a página rederiza isso. De novo, outro projeto para mostrar o React working.
+Este é um editor de markdown. Você escreve um código em markdown e a página rederiza isso. De novo, outro projeto para mostrar o React trabalhando.
 ##### Idioma do projeto: Inglês
