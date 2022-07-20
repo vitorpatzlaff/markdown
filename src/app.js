@@ -98,7 +98,7 @@ class App extends Component {
         content:
           '# Welcome!!!\n' +
           '## This app is a real time markdown render.\n' +
-          '### On the left white part of the app you can write a markdown code and then see it rendering on the right gray part.\n' +
+          '### On the left white part of the app you can write a markdown or html code and then see it rendering on the right gray part.\n' +
           '### On the up-right side, you can name the current document, create a new document and delete the current document.\n' +
           '### I recommend you delete this introduction and then create a new document.\n' +
           '## ENJOY!'
